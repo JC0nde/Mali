@@ -11,10 +11,25 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'PagesController@index');
+
+Route::get('services', 'PagesController@services');
+
+Route::get('about', 'PagesController@about');
+
+Route::get('contact', 'PagesController@getContact');
+
+Route::post('contact', 'PagesController@postContact');
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+
+Route::prefix('admin')->group(function()
+{
+    Route::get('/login', 'Auth\AdminLoginController@showLoginForm')->name('admin.login');
+
+    Route::post('/login', 'Auth\AdminLoginController@login')->name('admin.login.submit');
+
+    Route::get('/', 'AdminController@index')->name('admin.dashboard');
+});
