@@ -1122,6 +1122,7 @@ nav.main {
   padding : 0;
   height : 80px;
   width : 100%;
+  margin: 0 auto;
 }
 nav.main:after {
   display : table;
@@ -1132,10 +1133,11 @@ nav.main .nav-block {
 }
 nav.main a.brand {
   color : #e74430;
-  font-size : 18px;
+  font-size : 22px;
   float : left;
   line-height : 80px;
   padding : 0 30px;
+  font-weight: 600;
 }
 nav.main a.brand svg {
   height : 51px;
@@ -1159,8 +1161,9 @@ nav.main ul.main-nav > li {
 nav.main ul.main-nav > li > a {
   color : #525252;
   display : block;
-  font-size : 15px;
+  font-size : 16px;
   padding : 10px;
+  font-weight: 600;
 }
 nav.main ul.main-nav > li.active a, nav.main ul.main-nav > li > a:hover {
   color : #f4645f;
@@ -2014,4 +2017,22 @@ a.first {
   background-image: url(/img/pointer.png);
   background-repeat: no-repeat;
 }
-
+@media screen and (min-width: 980px){
+    nav.main {
+        margin: 0 auto;
+        max-width: 960px;
+    }
+}
+@media screen and (min-width: 1180px){
+    nav.main {
+        max-width: 1130px;
+    }
+}
+@media screen and (min-width: 1300px) {
+    nav.main{
+        max-width: 1200px;
+    }
+}
+.home .contact form {
+    text-align:left;
+}
