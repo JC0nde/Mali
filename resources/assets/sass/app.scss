@@ -179,8 +179,9 @@ body {
   font-size : 16px;
 }
 .container {
-  max-width : 1080px;
+  max-width : 1200px;
   margin : 0 auto;
+  text-align:center;
 }
 h1 {
   font-size : 48px;
@@ -2035,4 +2036,22 @@ a.first {
 }
 .home .contact form {
     text-align:left;
+}
+@media screen and (min-width: 769px){
+    svg#header-person {
+        max-width: 65%;
+        margin-bottom: -39px;
+    }
+}
+@media screen and (min-width: 980px){
+    svg#header-person {
+        max-width: 50%;
+        margin-bottom: -40px;
+    }
+}
+@media (min-height: 900px) and (min-width: 980px){
+    svg#header-person {
+        max-width: 786px;
+        margin-bottom: -57px;
+    }
 }
