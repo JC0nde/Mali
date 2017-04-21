@@ -48,6 +48,8 @@
               </div>
             </div>
 
+            {!! Honeypot::generate('my_name', 'my_time') !!}
+
             <div class="form-group{{ $errors->has('message') ? ' has-error' : '' }}">
               <label for="message" class="col-md-4 control-label">Ce dont vous avez besoin</label>
 

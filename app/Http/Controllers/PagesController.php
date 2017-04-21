@@ -33,7 +33,9 @@ class PagesController extends Controller
         $this->validate($request, [
             'name' => 'required',
             'email' => 'required|email',
-            'message' => 'min:10'
+            'message' => 'min:10',
+            'my_name'   => 'honeypot',
+            'my_time'   => 'required|honeytime:5'
         ]);
         
         $data = array(
