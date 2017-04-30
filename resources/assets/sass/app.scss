@@ -57,7 +57,7 @@ dfn {
   font-style : italic;
 }
 h1 {
-  margin : 0.67em 0;
+  margin : 0.35em 0;
 }
 mark {
   background : #ff0;
@@ -1598,7 +1598,7 @@ nav.main .switcher .dropdown-menu > li > a {
   margin : 0;
 }
 .home .hero {
-  padding : 60px 0;
+  padding : 15px 0;
 }
 .home .hero .content {
   text-align : center;
@@ -1606,7 +1606,7 @@ nav.main .switcher .dropdown-menu > li > a {
 .home .hero .content p {
   color : #aeaeae;
   font-size : 21px;
-  margin-bottom : 60px;
+  margin-bottom : 30px;
   letter-spacing : -0.02em;
 }
 .home .hero .macbook svg {
@@ -2054,4 +2054,144 @@ a.first {
         max-width: 786px;
         margin-bottom: -57px;
     }
+}
+.column {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
+    padding: 10px;
+}
+@media screen and (min-width: 769px){
+    .column.is-10, .column.is-10-tablet {
+        -webkit-box-flex: 0;
+        -ms-flex: none;
+        flex: none;
+        width: 83.33333333%;
+    }
+}
+@media screen and (min-width: 769px) {
+    .column.is-offset-1, .column.is-offset-1-tablet {
+        margin-left: 8.33333333%;
+    }
+}
+.button.is-primary.is-default, .button.is-primary.is-outlined {
+    background-color: transparent;
+    border-color: #00b1b3;
+    color: #00b1b3;
+}
+.button.is-success.is-default, .button.is-success.is-outlined {
+    background-color: transparent;
+    border-color: #FB503B;
+    color: #FB503B;
+}
+.button.is-success.is-default:focus, .button.is-success.is-default:hover, .button.is-success.is-outlined:focus, .button.is-success.is-outlined:hover {
+    background-color: #FB503B;
+    border-color: #FB503B;
+    color: #fff;
+}
+.button.is-primary.is-default:focus, .button.is-primary.is-default:hover, .button.is-primary.is-outlined:focus, .button.is-primary.is-outlined:hover {
+    background-color: #00b1b3;
+    border-color: #00b1b3;
+    color: #fff;
+}
+.button.is-primary.is-active, .button.is-primary:focus, .button.is-primary:hover {
+    background-color: #007f80;
+    border-color: transparent;
+    color: #fff;
+}
+.button.is-success.is-active, .button.is-success:focus, .button.is-success:hover {
+    background-color: #de4a11;
+    border-color: transparent;
+    color: #fff;
+}
+.button.is-default, .button.is-outlined.is-padded {
+    padding: 19px 20px;
+}
+.button.is-default, .button.is-outlined {
+    border-width: 2px;
+}
+.button.is-default, .button.is-padded {
+    padding: 20px;
+}
+.button.is-primary {
+    background-color: #00b1b3;
+    color: #fff;
+}
+.button.is-primary, .button.is-primary:active {
+    border-color: transparent;
+}
+@media screen and (min-width: 769px) {
+    .mr-1-tablet {
+        margin-right: 1em!important;
+    }
+}
+.button {
+    font-weight: 700;
+}
+.button{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.button {
+    -ms-flex-align: center;
+    align-items: center;
+    border: 1px solid #d7d7d7;
+    border-radius: 3px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    font-size: 15px;
+    height: 32px;
+    line-height: 24px;
+    position: relative;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
+.box, .button {
+    background-color: #fff;
+}
+.button, .nav-left, .table td.is-icon, .table th.is-icon, .tabs, .tag {
+    white-space: nowrap;
+}
+.button, .fa, table td, table th {
+    vertical-align: top;
+}
+.button, pre, pre code, strong {
+    color: #4d545d;
+}
+.button, .input, .textarea {
+    -webkit-box-align: center;
+    -webkit-appearance: none;
+}
+.button, .menu-label {
+    text-transform: uppercase;
+}
+.button{
+    -moz-appearance: none;
+}
+a {
+    padding: 0;
+    font-size: 100%;
+    background: 0 0;
+    text-decoration: none;
+    -webkit-transition: none 86ms ease-out;
+    transition: none 86ms ease-out;
+}
+.wow {
+    visibility: hidden;
+}
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
 }
