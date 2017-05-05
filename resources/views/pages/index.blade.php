@@ -14,8 +14,8 @@
                         tutorials are boring. These aren't. Ready to binge?
                     </p>
                     <div data-wow-delay=".6s" class="wow zoomIn" style="visibility: visible; animation-delay: 0.6s; animation-name: zoomIn;">
-                        <a href="/join" class="button is-default is-primary mr-1-tablet mb-1-mobile w-100-mobile">Services</a>
-                        <a href="/series?curated" class="button is-success is-default mb-1-mobile w-100-mobile">À propos</a>
+                        <a href="/services" class="button is-default is-primary mr-1-tablet mb-1-mobile w-100-mobile">Services</a>
+                        <a href="/about" class="button is-success is-default mb-1-mobile w-100-mobile">À propos</a>
                     </div>
                 </div>
             </div>

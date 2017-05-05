@@ -21,7 +21,9 @@
                           'csrfToken' => csrf_token(),
                           ]) !!};
     </script>
-
+    <link rel="stylesheet" href="{{ URL::asset('css/animate.css') }}" />
+    <script type="text/javascript" src="{{ URL::asset('js/wow.min.js') }}"></script>
+    <script>new WOW({ mobile: false }).init();</script>
   </head>
   <body class="home">
     <div id="app">
