@@ -1,7 +1,6 @@
 # jonathanconde.com
 
-here lies the code for my personal [website](https://jonathanconde.com).
-made with Laravel and Vue.js
+here lies the code for my future personal [website](https://jonathanconde.com).
 
 ## building
 requires `composer` and `npm`
